@@ -1,0 +1,595 @@
+.mainHeader{
+  background-color: black;
+}
+.navHeader{
+  margin-left:auto;
+  margin-right: auto;
+}
+.navBrand{
+  margin-left:3%;
+  margin-right: 3%;
+  font-weight: bolder;
+}
+.divInteligentnySad{
+  font-size: 1.7rem;
+}
+.sysCzujTemp{
+  text-align: center;
+  font-size: 1rem;
+}
+.navLinkItem{
+  font-size: 1,2rem;
+}
+.loader {
+  background-color: black;
+  text-align: center;
+  min-height: 100vh;
+}
+.loaderText{
+  padding-bottom: auto;
+  padding-top: 50%;
+  color: white;
+}
+.topContainerBackground{
+  background: url(./img/pascal-debrunner-U7LT_KjnBtY-unsplash.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height:700px;
+        position: relative;
+        z-index: 0;
+        background-position:top;
+}
+.topContainerBackground::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.342);
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.topContainerContent{
+  padding-left: 50px;
+}
+.topContainerHeading{
+  color: white;
+  padding-top: 350px;
+  font-weight: lighter;
+  text-shadow: rgba(0, 0, 0, 0.342) 3px 3px;
+  font-size: 2.5rem;
+}
+
+.topContainerHeading2{
+  color: white;
+  padding-top: 10px;
+  font-size: 1,5rem;
+  font-weight: normal;
+  text-shadow: rgba(0, 0, 0, 0.342) 2px 2px;
+}
+.dowiedzSieWiecejButton{
+  margin-top: 20px;
+  height: 60px;
+}
+.dowiedzSieWiecejHeading{
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.placeOfUseRow{
+  text-align: center;
+}
+.pleceOfUseDiv{
+  background-color: black;
+}
+.placeOfUseCarousel{
+  height: 320px;
+}
+.carouselImage{
+  height: 345px;
+  width: 100%;
+}
+.placeOfUseCarCaption{
+  font-size: 2.2rem;
+}
+.leftCol{
+  margin-top:auto;
+  margin-bottom: auto;
+}
+.leftColHeading{
+  color:white;
+  font-weight: lighter;
+  text-shadow: rgba(143, 142, 142, 0.342) 3px 3px;
+  font-size: 3rem;
+}
+.placeOfUseCarCaption{
+  text-shadow: rgba(0, 0, 0, 0.733)4px 3px;
+  font-weight: bold;
+}
+.fieldClass{
+  padding-bottom: 100px;
+}
+.space{
+  height: 50px;
+  background-color: rgb(27, 27, 27);
+}
+.aboutSystem{
+padding-bottom: 15px;
+}
+.aboutSystemHeading{
+  background-color: rgb(27, 27, 27);
+  padding-top:60px;
+  padding-bottom: 60px;
+}
+.aboutSystemContent{
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
+  background: linear-gradient(rgb(19, 17, 17),rgb(53, 53, 53));
+  color: white;
+  height: 250px;
+  margin-bottom: auto;
+}
+.infoText{
+  font-weight: lighter;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color:white;
+font-size:1.2rem
+}
+.aboutSystemText{
+  width: 90%;
+margin-right: auto;
+margin-left: auto;
+font-weight: bolder;
+padding-bottom: auto;
+padding-top: 30px;
+padding-bottom: 30px;
+text-align: justify;
+}
+.gardenContainerBackground{
+  background: url(./img/orchard-2938653_1920.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height:700px;
+        position: relative;
+        z-index: 0;
+        background-position:top;
+        
+}
+.gardenContainerBackground::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.438);
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.gardenHeading{
+  color: white;
+  padding-top: 80px;
+  font-weight: lighter;
+  text-shadow: rgba(0, 0, 0, 0.342) 3px 3px;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.gardenContent{
+  color:white;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+.gardenContentItem{
+  font-size: 1.2rem;
+}
+.deviceIcons{
+  font-size:4rem;
+  margin-bottom: 5px;
+  color: white;
+}
+.deviceIcons:hover{
+  color:#7a7a7a
+}
+.deviceNum{
+  display: inline;
+  font-size: 2rem;
+  padding-right: 5%;
+  color: white;
+}
+.deviceText{
+  display: inline;
+  color: white;
+}
+.deviceTextItem1{
+  padding-top: 8%;
+  color: white;
+}
+.deviceContainer{
+  text-align: center;
+  margin-top:80px;
+  margin-bottom: 50px;
+}
+.diviceHeading{
+  text-align: center;
+  padding-top: 90px;
+  font-weight: lighter;
+  font-size: 4rem;
+  color:white;
+  text-shadow: rgb(0, 0, 0) 4px 4px;
+}
+.deviceMainDiv{
+  background: url(./img/cherries-5118468_1920.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 0;
+  background-position:top;
+}
+
+.deviceMainDiv::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.418);
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.deviceItem{
+border-width: 3px;
+border-color: rgb(0, 0, 0);
+border-style: solid;
+border-radius: 20px;
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: rgba(0, 0, 0, 0.726);
+height: 100%;
+}
+.deviceItemCol{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.aplication{
+  background-color:rgb(27, 27, 27); 
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 110px;
+}
+.aplication-Cards{
+  background-color:rgb(27, 27, 27); 
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 50px;
+}
+.aplicationCardsCol{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.aplicationCards{
+  height: 560px;
+}
+.tabsContent{
+  color: white;
+  font-size: larger;
+  padding-right: 30px;
+}
+
+.comeBackButton{
+  margin-top: 20px;
+}
+.addButton{
+  margin-top: 20px;
+}
+.tabsLink{
+  color:white;
+  font-weight: bold;
+  font-size: larger;
+}
+.alarms{
+  background-color: rgb(27, 27, 27);
+  padding-bottom: 90px;
+  padding-top: 90px;
+}
+.alarmsContent{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.alarmsText{
+  color:white;
+  font-size: larger;
+  font-weight: bolder;
+  text-align: justify;
+}
+.alarmsHeading{
+  color:white;
+  font-weight: lighter;
+  font-size: 5rem;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.delivery{
+  background-color: rgb(27, 27, 27);
+  padding-top: 50px;
+}
+.deliveryLeftCol{
+  background-color: white;
+  height: 350px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+.deliveryPar{
+  font-weight: bold;
+  padding-left:30px
+}
+.deliveryImage{
+  width: 100%;
+  height: 300px;
+  border: black 2px solid;
+}
+.deliveryHeading{
+  font-size: 3.3rem;
+  font-weight: lighter;
+  text-shadow: rgba(0, 0, 0, 0.342) 3px 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left:30px
+}
+.warrantyRightCol{
+  background-color: rgb(27, 27, 27);
+  height: 200px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.warrantyPar{
+  font-weight: bold;
+  color:white;
+  padding-left: 30px;
+}
+.warrantyHeading{
+  font-size: 3rem;
+  font-weight: lighter;
+  text-shadow: rgba(0, 0, 0, 0.342) 3px 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  color:white;
+}
+.warrantyImage{
+  height: 300px;
+  width: 100%;
+}
+
+.contact{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.contactHeading{
+  font-size: 5rem;
+  font-weight: lighter;
+  text-shadow: rgba(0, 0, 0, 0.342) 3px 3px;
+  padding-bottom: 70px;
+  padding-top: 90px;
+  text-align: center;
+}
+.contactPhone{
+  font-weight: bolder;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.phoneIcon{
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 3rem;
+  color:#007bff;
+}
+.phoneNumber{
+  display: inline-block;
+  font-size: 2rem;
+}
+.mapsImage{
+  width: 100%;
+  border-style:groove;
+  border-width :0.5px;
+  border-color:  rgba(0, 0, 0, 0.233);
+}
+.formLabel{
+  text-align: left;
+  font-weight: bold;
+}
+.formButton{
+  text-align: center;
+}
+.mapsImage{
+  text-align: center;
+}
+.footer{
+  background-color:rgb(27, 27, 27);
+  color: white;
+  height: 150px;
+  text-align: center;
+}
+.footerIcon{
+  color:#007bff;
+  font-size: 2.2rem;
+}
+.footerHeading{
+padding-top: 60px;
+font-weight: lighter;
+}
+.sendButton{
+  margin-bottom: 20px;
+}
+@media (min-width: 576px)  {
+  .topContainerHeading{
+    font-size: 2.3rem;
+  }
+  .placeOfUseCarCaption{
+    font-size: 3rem;
+  }
+  .gardenHeading{
+    font-size: 3.5rem;
+  }
+  .placeOfUseCarousel{
+    height: 500px;
+  }
+  .carouselImage{
+    height: 523px;
+  }
+  .deliveryImage{
+    width: 100%;
+  }
+  .aboutSystemText{
+    padding-top:20px
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 576px)  {
+  .warrantyContainer{
+    margin-top:50px;
+     margin-bottom:50px;
+     text-align: center;
+  }
+  .aboutSystemContent{
+    padding-top:auto;
+    padding-bottom: 30px;
+    height: 100%;
+  }
+} 
+
+@media (min-width: 768px) { 
+  .topContainerHeading{
+    font-size: 3rem;
+  }
+  .placeOfUseCarousel{
+    height: 600px;
+  }
+  .carouselImage{
+    height: 623px;
+  }
+  .placeOfUseCarCaption{
+    font-size: 3.5rem;
+  }
+  .infoText{
+    font-size: 1.7rem;
+  }
+  .gardenHeading{
+    font-size: 4rem;
+  }
+  .gardenContentItem{
+    font-size: 1.4rem;
+  }
+  .warrantyImage{
+    width: 100%;
+    height: 500;
+    margin-left: 50px;
+    border: black 2px solid;
+  }
+  .warrantyContainer{
+    margin-top:50px;
+     margin-bottom:50px;
+  }
+  .warrantyRightCol{
+    height: 250px;
+ }
+ .deliveryImage{
+  border: none;
+}
+.delivery{
+  padding-bottom: 50px;
+}
+.deliveryHeading{
+  font-size: 3.5rem;
+}
+.deliveryImage{
+  width: 350px;
+  height: 350px;
+}
+.aboutSystemContent{
+  height: 100%;
+}
+.loaderText{
+  padding-top: 35%;
+}
+}
+
+@media (min-width: 992px) { 
+  .topContainerHeading{
+    font-size: 4rem;
+  }
+  .topContainerContent{
+    padding-left: 120px;
+  }
+  .placeOfUseCarousel{
+    height: 600px;
+  }
+  .carouselImage{
+    height: 623px;
+  }
+  .placeOfUseCarCaption{
+    font-size: 3.2rem;
+  }
+  .infoText{
+    font-size: 2rem;
+  }
+  .gardenHeading{
+    font-size: 4.5rem;
+  }
+  .gardenContentItem{
+    font-size: 1.5rem;
+  }
+  .warrantyImage{
+    height: 500px;
+    width: 700px;
+    
+  }
+  .warrantyContainer{
+    margin-top:50px;
+     margin-bottom:50px;
+  }
+  .warrantyHeading{
+    font-size: 4rem;
+  }
+  .deliveryImage{
+    width: 480px;
+    height: 450px;
+  }
+  .deliveryHeading{
+    font-size: 4rem;
+  }
+  .aboutSystemContent{
+    height: 250px;
+    margin-top: 30px;
+  }
+  .aboutSystemText{
+    padding-top:20px
+    
+  }
+  .loaderText{
+    padding-top: 25%;
+  }
+}
+@media (min-width: 1200px) { 
+  .deliveryImage{
+    width: 600px;
+    height: 500px;
+  }
+  .deviceItem{
+    width: 80%;
+     }
+  .diviceHeading{
+    font-size: 4.8rem;
+  }
+  .loaderText{
+    padding-top: 20%;
+  }
+ }
