@@ -1,3 +1,6 @@
+.App{
+  background-color: rgb(138, 138, 138);
+}
 .mainHeader{
   background-color: black;
 }
@@ -27,7 +30,7 @@
 }
 .loaderText{
   padding-bottom: auto;
-  padding-top: 50%;
+  padding-top: 70%;
   color: white;
 }
 .topContainerBackground{
@@ -114,7 +117,8 @@
   background-color: rgb(27, 27, 27);
 }
 .aboutSystem{
-padding-bottom: 15px;
+padding-bottom: 0px;
+background-color: white;
 }
 .aboutSystemHeading{
   background-color: rgb(27, 27, 27);
@@ -127,7 +131,7 @@ padding-bottom: 15px;
   padding-right: auto;
   background: linear-gradient(rgb(19, 17, 17),rgb(53, 53, 53));
   color: white;
-  height: 250px;
+  height: 280px;
   margin-bottom: auto;
 }
 .infoText{
@@ -137,19 +141,17 @@ padding-bottom: 15px;
   margin-right: auto;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px;
   color:white;
-font-size:1.2rem
+  font-size:1.2rem;
 }
 .aboutSystemText{
-  width: 90%;
-margin-right: auto;
-margin-left: auto;
-font-weight: bolder;
-padding-bottom: auto;
-padding-top: 30px;
-padding-bottom: 30px;
-text-align: justify;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: bolder;
+  padding-top: 10%;
+  text-align: justify;
+  font-size: 0.8rem;
 }
 .gardenContainerBackground{
   background: url(./img/orchard-2938653_1920.jpg) no-repeat;
@@ -176,7 +178,7 @@ text-align: justify;
   padding-top: 80px;
   font-weight: lighter;
   text-shadow: rgba(0, 0, 0, 0.342) 3px 3px;
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   text-align: center;
 }
 .gardenContent{
@@ -218,7 +220,7 @@ text-align: justify;
   text-align: center;
   padding-top: 90px;
   font-weight: lighter;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color:white;
   text-shadow: rgb(0, 0, 0) 4px 4px;
 }
@@ -273,12 +275,15 @@ height: 100%;
   margin-bottom: 20px;
 }
 .aplicationCards{
-  height: 560px;
+  height: 600px;
 }
 .tabsContent{
   color: white;
-  font-size: larger;
-  padding-right: 30px;
+  font-size: normal;
+  padding-right: auto;
+  padding-left: 5%;
+  text-align: justify;
+  width: 90%;
 }
 
 .comeBackButton{
@@ -305,14 +310,14 @@ height: 100%;
 }
 .alarmsText{
   color:white;
-  font-size: larger;
+  font-size: small;
   font-weight: bolder;
   text-align: justify;
 }
 .alarmsHeading{
   color:white;
   font-weight: lighter;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -351,6 +356,9 @@ height: 100%;
   margin-top: auto;
   margin-bottom: auto;
 }
+.warranty{
+  background-color: white;
+}
 .warrantyPar{
   font-weight: bold;
   color:white;
@@ -371,11 +379,12 @@ height: 100%;
 }
 
 .contact{
-  margin-top: 30px;
-  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: white;
 }
 .contactHeading{
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: lighter;
   text-shadow: rgba(0, 0, 0, 0.342) 3px 3px;
   padding-bottom: 70px;
@@ -407,6 +416,9 @@ height: 100%;
   text-align: left;
   font-weight: bold;
 }
+.err{
+  color:red;
+}
 .formButton{
   text-align: center;
 }
@@ -430,6 +442,20 @@ font-weight: lighter;
 .sendButton{
   margin-bottom: 20px;
 }
+.carousel-control-prev{
+  background-color: black;
+  height:50px;
+  margin-top:auto;
+  margin-bottom: auto;
+}
+.carousel-control-next{
+  background-color: black;
+  height:50px;
+  margin-top:auto;
+  margin-bottom: auto;
+}
+
+
 @media (min-width: 576px)  {
   .topContainerHeading{
     font-size: 2.3rem;
@@ -450,19 +476,36 @@ font-weight: lighter;
     width: 100%;
   }
   .aboutSystemText{
-    padding-top:20px
+    padding-top:50px;
   }
+  .tabsContent{
+    text-align: center;
+  }
+  .deviceHeading{
+    font-size: 4rem;;
+  }
+  .alarmsHeading{
+    font-size: 5rem;
+  }
+  .alarmsText{
+    font-size: 1rem;
+  }
+  .loaderText{
+    padding-top: 50%;
+  }
+  
 }
 @media only screen and (max-width: 768px) and (min-width: 576px)  {
   .warrantyContainer{
-    margin-top:50px;
-     margin-bottom:50px;
      text-align: center;
   }
   .aboutSystemContent{
     padding-top:auto;
     padding-bottom: 30px;
     height: 100%;
+  }
+  .aboutSystemText{
+    font-size: 1rem;
   }
 } 
 
@@ -495,31 +538,48 @@ font-weight: lighter;
     border: black 2px solid;
   }
   .warrantyContainer{
-    margin-top:50px;
-     margin-bottom:50px;
+    padding-top:50px;
+     padding-bottom:50px;
   }
   .warrantyRightCol{
     height: 250px;
  }
- .deliveryImage{
-  border: none;
+  .deliveryImage{
+    border: none;
+  }
+  .delivery{
+    padding-bottom: 50px;
+  }
+  .deliveryHeading{
+    font-size: 3.5rem;
+  }
+  .deliveryImage{
+    width: 350px;
+    height: 350px;
+  }
+  .aboutSystemRow{
+    margin-top:50px;
+    padding-bottom:50px;
+  }
+  .aboutSystemContent{
+    height: 100%;
+  }
+  .loaderText{
+    padding-top: 35%;
+  }
+  .aboutSystemText{
+    font-size: 0.9rem;
+  }
+  .tabsContent{
+    font-size: larger;
+  }
+  .aplicationCards{
+    height: 600px;
+  }
 }
-.delivery{
-  padding-bottom: 50px;
-}
-.deliveryHeading{
-  font-size: 3.5rem;
-}
-.deliveryImage{
-  width: 350px;
-  height: 350px;
-}
-.aboutSystemContent{
-  height: 100%;
-}
-.loaderText{
-  padding-top: 35%;
-}
+.flex-column{
+  padding-bottom: 30px;
+  
 }
 
 @media (min-width: 992px) { 
@@ -553,8 +613,8 @@ font-weight: lighter;
     
   }
   .warrantyContainer{
-    margin-top:50px;
-     margin-bottom:50px;
+    padding-top:50px;
+     padding-bottom:50px;
   }
   .warrantyHeading{
     font-size: 4rem;
@@ -568,15 +628,18 @@ font-weight: lighter;
   }
   .aboutSystemContent{
     height: 250px;
-    margin-top: 30px;
+    margin-top: 60px;
   }
   .aboutSystemText{
     padding-top:20px
-    
   }
   .loaderText{
     padding-top: 25%;
   }
+  .cardsText{
+height:250px
+  }
+  
 }
 @media (min-width: 1200px) { 
   .deliveryImage{
@@ -592,4 +655,32 @@ font-weight: lighter;
   .loaderText{
     padding-top: 20%;
   }
+  .aboutSystemText{
+    padding-top:35px;
+  }
+  .aboutSystemContent{
+    margin-top: 70px;
+  }
+  .conctactHeading{
+    font-size: 4.5rem;
+  }
+ }
+ @media only screen and (max-width: 1920px) and (min-width: 1200px) {
+   .warrantyImage{
+     width: 100%;
+   }
+
+ }
+ @media (min-width: 1921px){
+   .cutView{
+     margin-right:auto;
+     margin-left:auto;
+     width:60%;
+   }
+   .deliveryImage{
+     width: 100%;
+   }
+   .warrantyImage{
+     width: 100%;
+   }
  }

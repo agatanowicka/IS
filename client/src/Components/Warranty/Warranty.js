@@ -11,7 +11,7 @@ export class Warranty extends Component {
                 <Container fluid className='warrantyContainer' style={{marginLeft:'0px',marginRight:'0px'}}>
                     <Row>
                         <Col sm={12} md={6} lg={6} style={{padding:'0px'}}>
-                            <img className='warrantyImage' src='https://cdn.pixabay.com/photo/2016/06/12/20/26/macro-1452986_960_720.jpg'></img>
+                            <img className='warrantyImage' src='/images/warranty.jpg'></img>
                         </Col>
                         <Col sm={12} md={6} lg={6}className='warrantyRightCol'>
                             <h1 className="warrantyHeading">GWARANCJA</h1>

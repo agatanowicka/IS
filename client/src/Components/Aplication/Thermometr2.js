@@ -13,13 +13,13 @@ class Thermometr2 extends Component {
                         <Button variant="secondary">Edytuj</Button>
                     </Card.Header>
                 </Card.Body>
-                <ListGroup className="list-group-flush">
+                <ListGroup className="list-group-flush cardsText">
                     <ListGroupItem>bateria: 89%</ListGroupItem>
                     <ListGroupItem>temperatura dolna: -0,53 °C</ListGroupItem>
                     <ListGroupItem>temperatura górna: -0,18 °C</ListGroupItem>
                     <ListGroupItem>częstotliwość danych: 10 m</ListGroupItem>
                 </ListGroup>
-                <Card.Body>
+                <Card.Body className='cardsButton'>
                     <Button variant="primary">Pokaż temperatury ostrzegania</Button>
                 </Card.Body>
             </Card>

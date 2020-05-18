@@ -10,7 +10,7 @@ class AddThermometr extends Component {
                     <Card.Header style={{ height:'100px' }}>
                         <Card.Title>Dodaj termometr</Card.Title>
                     </Card.Header>
-                    <input style={{ marginTop: '20px', display:'block', marginRight:'auto', marginLeft:'auto'}}></input>
+                    <input style={{ marginTop: '20px', display:'block', marginRight:'auto', marginLeft:'auto', width:'80%'}} disabled='false'></input>
                     <Button className='addButton' variant="secondary">dodaj</Button>
                 </Card.Body>
             </Card>

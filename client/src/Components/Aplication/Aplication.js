@@ -1,15 +1,32 @@
 import React, { Component, useState, useRef } from 'react';
-import { useSpring, animated } from 'react-spring';
-import Thermometr1 from './Thermometr1';
-import Thermometr2 from './Thermometr2';
-import AddThermometr from './AddThermometr';
-import ComeBackToViewsOrchards from './ComeBackToViewsOrchards';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Tab from 'react-bootstrap/Tab'
 import Nav from 'react-bootstrap/Nav';
+import CarouselCards from './CarouselCards';
+import AllCards from './AllCards';
 class Aplication extends Component {
+    constructor(props) {
+        super(props);
+        const width= window.innerWidth
+        this.state = {
+            width
+        }
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    }
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener("resize", this.updateWindowDimensions.bind(this));
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updateWindowDimensions.bind(this));
+    }
+
+    updateWindowDimensions() {
+        this.setState({width:window.innerWidth});
+    }
     render() {
         return (
                 <div className='aplication' id='aplikacja'>
@@ -49,68 +66,10 @@ class Aplication extends Component {
                         </Col>
                     </Row>
                 </Tab.Container>
-                <Container fluid className='aplication-Cards'>
-                    <Row md={4}>
-                        <Col xs={6} md={6} lg={3} className='aplicationCardsCol'> <Card ><Thermometr1 /></Card></Col>
-                        <Col xs={6} md={6} lg={3} className='aplicationCardsCol'><Card><Thermometr2 /></Card></Col>
-                        <Col xs={6} md={6} lg={3} className='aplicationCardsCol'><Card><ComeBackToViewsOrchards /></Card></Col>
-                        <Col xs={6} md={6} lg={3} className='aplicationCardsCol'><Card><AddThermometr /></Card></Col>
-                    </Row>
-                </Container>
+            {this.state.width>576?<AllCards />:<CarouselCards />}
             </div>
         )
     }
 }
 export default Aplication
 
-function Card({ children }) {
-    const ref = useRef();
-    const [isHovered, setHovered] = useState(false);
-
-    const [animatedProps, setAnimatedProps] = useSpring(() => {
-        return {
-            xys: [0, 0, 1],
-            config: { mass: 10, tension: 150, friction: 200, precision: 0.00001 }
-        };
-    });
-
-    return (
-        <animated.div
-            ref={ref}
-            className="card"
-            onMouseEnter={() => setHovered(true)}
-            onMouseMove={({ clientX, clientY }) => {
-                const x =
-                    clientX -
-                    (ref.current.offsetLeft -
-                        (window.scrollX || window.pageXOffset || document.body.scrollLeft));
-                const y =
-                    clientY -
-                    (ref.current.offsetTop -
-                        (window.scrollY || window.pageYOffset || document.body.scrollTop));
-
-                const dampen = 200;
-                const xys = [
-                    -(y - ref.current.clientHeight / 2) / dampen,
-                    (x - ref.current.clientWidth / 2) / dampen,
-                    1.03
-                ];
-
-                setAnimatedProps({ xys: xys });
-            }}
-            onMouseLeave={() => {
-                setHovered(false);
-                setAnimatedProps({ xys: [0, 0, 1] });
-            }}
-            style={{
-                zIndex: isHovered ? 2 : 1,
-                transform: animatedProps.xys.interpolate(
-                    (x, y, s) =>
-                        `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
-                )
-            }}
-        >
-            {children}
-        </animated.div>
-    );
-}

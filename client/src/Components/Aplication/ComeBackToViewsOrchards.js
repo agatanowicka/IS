@@ -14,14 +14,14 @@ class ComeBackToViewsOrchards extends Component {
                     </Card.Header>
 
                 </Card.Body>
-                <ListGroup className="list-group-flush">
+                <ListGroup className="list-group-flush cardsText">
                     <ListGroupItem>najniższy poziom baterii: 23%</ListGroupItem>
                     <ListGroupItem>najniższa temperatura: -0,53 °C</ListGroupItem>
                     <ListGroupItem>najwyższa temperatura: 0,78 °C</ListGroupItem>
                     <ListGroupItem>numer awaryjny: 123123123</ListGroupItem>
                     <ListGroupItem>Zauważone problemy: Brak</ListGroupItem>
                 </ListGroup>
-                <Card.Body>
+                <Card.Body className='cardsButton'>
                     <Button variant="primary">Pokaż widok termometrów</Button>
                 </Card.Body>
             </Card>

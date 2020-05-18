@@ -35,6 +35,7 @@ export class App extends Component {
     return (
       <div className="App">
         <Header />
+        <div className='cutView'>
         <TopContainer />
         <PlaceOfUse />
         <AboutSystem />
@@ -45,6 +46,7 @@ export class App extends Component {
         <Warranty />
         <Delivery />
         <Contact />
+        </div>
         <Footer />
       </div>
     )

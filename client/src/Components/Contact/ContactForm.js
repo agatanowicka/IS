@@ -7,8 +7,10 @@ class ContactForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            state: '',
             email: '',
-            message: ''
+            message: '',
+            className:''
         }
     }
     onEmailChange(event) {
@@ -20,28 +22,22 @@ class ContactForm extends Component {
     }
     handleSubmit(e) {
         e.preventDefault();
-        debugger;
+        this.setState({ state: 'Wysyłanie wiadmości.'})
         const email = this.state.email;
         const message = this.state.message;
         axios({
             method: "POST",
             url: "/api/form",
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            headers: { 'Content-Type': 'application/json' },
             data: {
-                email,
+                email: email,
                 message
             }
         }).then((response) => {
-            if (response.data.status === 'success') {
-                alert("Wiadomość została wysłana.");
-                this.resetForm()
-            }
+            this.setState({ className: '', state: 'Wiadomość została wysłana', email: '', message: '' })
         }).catch((err) => {
-            alert('Nie udało się wysłać wiadomości. Prosimy o kontakt telefoniczny.')
+            this.setState({ className: 'err', state: 'Nie udało się wysłać wiadomości. Prosimy o kontakt telefoniczny.'})
         })
-    }
-    resetForm() {
-        this.setState({ name: '', email: '', message: '' })
     }
     render() {
         return (
@@ -64,11 +60,13 @@ class ContactForm extends Component {
                         rows="3" value={this.state.message}
                         onChange={this.onMessageChange.bind(this)}
                     />
+                    <Form.Label className={this.state.className}>{this.state.state}</Form.Label>
                 </Form.Group>
                 <div className='formButton'>
                     <Button className='sendButton' variant="primary" type="submit" >
                         Wyślij
                 </Button>
+                
                 </div>
             </Form>
         )

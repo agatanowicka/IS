@@ -15,7 +15,7 @@ export class Delivery extends Component {
                                 <p> Montaż urządzenia nie jest potrzebny. Wystarczy podłączyć baterię, aby już po chwili urządzenie zaczęło wysyłać temperaturę na serwer. Pozwala to na natychmiastową aktywację systemu.</p>
                             </div>
                         </Col>
-                        <Col style={{ padding: '0px'}} sm={12} md={6}><img className='deliveryImage' src='https://images.unsplash.com/photo-1493135637657-c2411b3497ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80'></img></Col>
+                        <Col style={{ padding: '0px'}} sm={12} md={6}><img className='deliveryImage' src='/images/delivery.jpg'></img></Col>
                     </Row>
                 </Container>
             </div>
